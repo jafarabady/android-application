@@ -3,17 +3,26 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "Esteded";
-    src: url("assets/fonts/Estedad[wght,kshd].ttf");
-}
-@font-face {
-font-family: "sans";
-    src: url("../../assets/");
+    font-family: iranyekan;
+    src: url("/assets/fonts/IRANYekanBold.ttf")
 }
 body{
-    /*font-family: "Esteded";*/
+    font-family: iranyekan !important;
+
     direction: rtl;
     height:100vh ;
+}
+*{
+    font-family: iranyekan !important;
+}
+input{
+    font-family: iranyekan !important;
+}
+button{
+    font-family: iranyekan !important;
+}
+a{
+    font-family: iranyekan !important;
 }
 .dark{
     background-color: #2E2E2E !important;
@@ -21,9 +30,9 @@ body{
 .dark .menu-nav{
     background-color: #cad3d5 !important;
 }
-.dark .menu-nav .svg{
-    color: white !important;
-}
+/*.dark .menu-nav .svg{*/
+/*    color: #ffffff !important;*/
+/*}*/
 .dark .menu-setting{
     color: white !important;
 }

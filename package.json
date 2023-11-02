@@ -19,9 +19,9 @@
     "license": "ISC",
     "dependencies": {
         "androidjs": "^2.0.2",
-        "flowbite": "^2.0.0",
         "axios": "^1.6.0",
         "flowbite": "^2.0.0",
+        "sweetalert2": "^11.9.0",
         "swiper": "^11.0.3"
     },
     "project-name": "Test Project",
