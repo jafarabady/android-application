@@ -10,14 +10,44 @@
     <link rel="stylesheet" href="../assets/styles/styles.css">
     <link rel="stylesheet" href="../assets/styles/page3.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
 
     <title>Document</title>
 </head>
 <body>
 <div class="flex flex-col items-center mx-auto w-[80%] gap-4 ">
-    <div class="w-full p-4 rounded-2xl  bg-[#F6F7FB] font-bold hover:bg-gray-400 ease-in	type text-center mt-4 ">
-        پسماند خشک
-    </div>
+<!--    <div class="w-full p-4 rounded-2xl  bg-[#F6F7FB] font-bold hover:bg-gray-400 ease-in	type text-center mt-4 ">-->
+
+        <button id="dropdownCheckboxButton" data-dropdown-toggle="dropdownDefaultCheckbox" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Dropdown checkbox <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+        </svg>
+        </button>
+
+        <!-- Dropdown menu -->
+        <div id="dropdownDefaultCheckbox" class="z-10 hidden w-48 bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600">
+            <ul class="p-3 space-y-3 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownCheckboxButton">
+                <li>
+                    <div class="flex items-center">
+                        <input id="checkbox-item-1" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                        <label for="checkbox-item-1" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">پسماند خشک</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center">
+                        <input checked id="checkbox-item-2" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                        <label for="checkbox-item-2" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">فلز</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center">
+                        <input id="checkbox-item-3" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                        <label for="checkbox-item-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">کاغذ</label>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
     <input type="text" class="w-full p-4 text-gray-900 border border-gray-300 outline-green-500 rounded-2xl " placeholder="آدرس خود را وارد کنید">
     <label class="pick-date-title"    for=".pick-date"></label>
     <div class="pick-date bg-[#F6F7FB] p-8 rounded-2xl shadow-2xl " >
@@ -122,6 +152,7 @@ function toggleDate(e){
 
 }
 </script>
+
 <script src="../assets/js/Time.js"></script>
 </body>
 </html>

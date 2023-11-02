@@ -4,7 +4,11 @@
 
 @font-face {
     font-family: "Esteded";
-    src: url("assets/fonts/Estedad[wght,kshd].woff2");
+    src: url("assets/fonts/Estedad[wght,kshd].ttf");
+}
+@font-face {
+font-family: "sans";
+    src: url("../../assets/");
 }
 body{
     /*font-family: "Esteded";*/
