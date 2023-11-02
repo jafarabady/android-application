@@ -1,0 +1,11 @@
+.type{
+    transition: 0.3s;
+}
+.activeButton{
+    background-color: rgb(34 197 94 ) !important;
+    transition: 0.3s;
+}
+.button{
+    transition: 0.3s;
+
+}

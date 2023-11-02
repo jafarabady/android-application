@@ -2,20 +2,63 @@
 <html lang="fa">
 <head>
 	<title>Webview Example</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--		<link rel="stylesheet" href="../assets/bootstrap.min.css">-->
-	<link rel="stylesheet" href=".././dist/output.css">
-	<meta charset="UTF-8">
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../assets/styles/styles.css">
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 	<script type="text/javascript" src="../node_modules/androidjs/lib/androidjs.js"></script>
 	<script src="https://cdn.tailwindcss.com"></script>
-
+	<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+	/>
+	<link rel="stylesheet" href="../assets/styles/index.css">
 </head>
+
+<style>
+	.app{
+		font-size:30px;
+	}
+</style>
+
 <body>
-<a href="/views/page2.html">ورود</a>
+<!--<a href="/views/page2.html">ورود</a>-->
+<swiper-container class="mySwiper w-[80%] mt-8 "  pagination="true"  pagination-clickable="true" centered-slides="true" autoplay-delay="2500" >
+	<swiper-slide>
+		<img src="../assets/image/5de4b21bcd1b9.jpg" class="rounded-2xl w-full"/>
+	</swiper-slide>
+	<swiper-slide>
+		<img src="../assets/image/ON5RS90.jpg"  class="rounded-2xl w-full"/>
+	</swiper-slide>
+</swiper-container>
+<div class="flex items-center justify-center gap-4 mt-8 ">
+<button class="border-none  py-2 px-4 bg-gray-400 rounded-2xl text-[15px] flex gap-1 items-center justify-center">
+	<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+		<path d="M9 14.25H15" stroke="#1D2026" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+		<path d="M9 11.25H15" stroke="#1D2026" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+		<path d="M15.0002 3.75H18.75C18.9489 3.75 19.1397 3.82902 19.2803 3.96967C19.421 4.11032 19.5 4.30109 19.5 4.5V20.25C19.5 20.4489 19.421 20.6397 19.2803 20.7803C19.1397 20.921 18.9489 21 18.75 21H5.25C5.05109 21 4.86032 20.921 4.71967 20.7803C4.57902 20.6397 4.5 20.4489 4.5 20.25V4.5C4.5 4.30109 4.57902 4.11032 4.71967 3.96967C4.86032 3.82902 5.05109 3.75 5.25 3.75H8.9998" stroke="#1D2026" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+		<path d="M8.25 6.75V6C8.25 5.00544 8.64509 4.05161 9.34835 3.34835C10.0516 2.64509 11.0054 2.25 12 2.25C12.9946 2.25 13.9484 2.64509 14.6517 3.34835C15.3549 4.05161 15.75 5.00544 15.75 6V6.75H8.25Z" stroke="#1D2026" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+	</svg>
+	قیمت پسماند خشک</button>
+<button class="border-none py-2 px-4 bg-gray-400 rounded-2xl flex gap-1 text-[15px] items-center justify-center">
+	<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path d="M6 15C7.65685 15 9 13.6569 9 12C9 10.3431 7.65685 9 6 9C4.34315 9 3 10.3431 3 12C3 13.6569 4.34315 15 6 15Z" stroke="#1D2026" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+		<path d="M16.5 21.75C18.1569 21.75 19.5 20.4069 19.5 18.75C19.5 17.0931 18.1569 15.75 16.5 15.75C14.8431 15.75 13.5 17.0931 13.5 18.75C13.5 20.4069 14.8431 21.75 16.5 21.75Z" stroke="#1D2026" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+		<path d="M16.5 8.25C18.1569 8.25 19.5 6.90685 19.5 5.25C19.5 3.59315 18.1569 2.25 16.5 2.25C14.8431 2.25 13.5 3.59315 13.5 5.25C13.5 6.90685 14.8431 8.25 16.5 8.25Z" stroke="#1D2026" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+		<path d="M13.9766 6.87207L8.52309 10.3779" stroke="#1D2026" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+		<path d="M8.52309 13.6221L13.9766 17.1279" stroke="#1D2026" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+	</svg>
+	معرفی به دوستان</button>
+</div>
+
 
 <div class="menu-nav fixed z-50 w-[90%] h-16 max-w-lg -translate-x-1/2 bg-white border border-gray-300 rounded-full bottom-4 left-1/2 dark:bg-gray-700 dark:border-gray-600">
+<div class="flex items-center justify-center ">
+	<button class="bg-green-600 px-8 py-2 mx-auto mt-4 text-white  rounded-2xl shadow-xl">
+		ثبت درخواست جمع آوری
+	</button>
+
+</div>
+<div class="fixed z-50 w-[90%] h-16 max-w-lg -translate-x-1/2 bg-white border border-gray-300 rounded-full bottom-4 left-1/2 dark:bg-gray-700 dark:border-gray-600">
 	<div class="grid h-full max-w-lg grid-cols-5 mx-auto">
 		<button data-tooltip-target="tooltip-home" type="button" class="inline-flex flex-col items-center justify-center px-5 rounded-r-full hover:bg-gray-50 dark:hover:bg-gray-800 group">
 			<svg class="w-5 h-5 mb-1 text-green-600 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -82,9 +125,11 @@
 
 <script type="text/javascript" src = "../assets/script.js"></script>
 <script src="../assets/jquery-3.3.1.slim.min.js"></script>
+<script src="../assets/js/index.js"></script>
 <script src="../assets/popper.min.js"></script>
 <script src="../path/to/flowbite/dist/flowbite.bundle.js"></script>
 <!--<script src="../assets/bootstrap.min.js"></script>-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 </body>
 
 </html>

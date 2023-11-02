@@ -1,0 +1,14 @@
+// const allTimes =document.querySelectorAll(".time")
+// const allDate=document.querySelectorAll(".date")
+//
+// allDate.forEach(date => {
+//     date.addEventListener("click",(e)=>{
+//         date.classList.add("activeButton")
+//         const dateActive = document.querySelector(".activeButton")
+//         if (dateActive) {
+//             dateActive.classList.remove('activeButton')
+//         }
+//         console.log()
+//         e.target.classList.add("activeButton")
+//     })
+// })
