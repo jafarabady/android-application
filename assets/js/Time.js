@@ -12,3 +12,11 @@
 //         e.target.classList.add("activeButton")
 //     })
 // })
+const mmd = document.querySelector('.alert-product')
+const handleSubmit = ()=>{
+    mmd.classList.remove('hidden')
+    mmd.classList.add('block')
+    setTimeout(()=> {
+        window.location.href = 'index.html'
+    },3000)
+}
