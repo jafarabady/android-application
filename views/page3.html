@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="../assets/styles/styles.css">
     <link rel="stylesheet" href="../assets/styles/page3.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css" rel="stylesheet" />
 
     <title>Document</title>
 </head>
@@ -18,37 +19,47 @@
 <div class="flex flex-col items-center mx-auto w-[80%] gap-4 ">
 <!--    <div class="w-full p-4 rounded-2xl  bg-[#F6F7FB] font-bold hover:bg-gray-400 ease-in	type text-center mt-4 ">-->
 
-        <button id="dropdownCheckboxButton" data-dropdown-toggle="dropdownDefaultCheckbox" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Dropdown checkbox <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+        <button id="dropdownCheckboxButton" data-dropdown-toggle="dropdownDefaultCheckbox" class="mt-4 w-full flex items-center justify-between text-white bg-green-700 hover:bg-green-500 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center  " type="button">نوع پسماند <svg class="mr-2 w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
         </svg>
         </button>
-
         <!-- Dropdown menu -->
-        <div id="dropdownDefaultCheckbox" class="z-10 hidden w-48 bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600">
+        <div id="dropdownDefaultCheckbox" class="w-[80%] position-relative z-10 hidden  bg-[#F6F7FB] divide-y divide-gray-100 rounded-lg shadow ">
             <ul class="p-3 space-y-3 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownCheckboxButton">
                 <li>
-                    <div class="flex items-center">
-                        <input id="checkbox-item-1" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                        <label for="checkbox-item-1" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">پسماند خشک</label>
+                    <div class="flex items-center gap-4">
+                        <input id="checkbox-item-1" type="checkbox" value="" class="w-4 h-4 text-black bg-gray-100 border-green-300 rounded focus:ring-green-500  ">
+                        <label for="checkbox-item-1" class="ml-2 text-sm font-medium text-black">پسماند خشک</label>
                     </div>
                 </li>
                 <li>
-                    <div class="flex items-center">
-                        <input checked id="checkbox-item-2" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                        <label for="checkbox-item-2" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">فلز</label>
+                    <div class="flex items-center gap-4">
+                        <input id="checkbox-item-2" type="checkbox" value="" class="w-4 h-4 text-black bg-gray-100 border-green-300 rounded focus:ring-green-500  ">
+                        <label for="checkbox-item-2" class="ml-2 text-sm font-medium   text-black">فلز</label>
                     </div>
                 </li>
                 <li>
-                    <div class="flex items-center">
-                        <input id="checkbox-item-3" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                        <label for="checkbox-item-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">کاغذ</label>
+                    <div class="flex items-center gap-4">
+                        <input id="checkbox-item-3" type="checkbox" value="" class="w-4 h-4 text-black bg-gray-100 border-green-300 rounded focus:ring-green-500  ">
+                        <label for="checkbox-item-3" class="ml-2 text-sm font-medium   text-black">کاغذ</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center gap-4">
+                        <input id="checkbox-item-4" type="checkbox" value="" class="w-4 h-4 text-black bg-gray-100 border-green-300 rounded focus:ring-green-500  ">
+                        <label for="checkbox-item-4" class="ml-2 text-sm font-medium   text-black ">حلبی</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center gap-4">
+                        <input id="checkbox-item-4" type="checkbox" value="" class="w-4 h-4 text-black bg-gray-100 border-green-300 rounded focus:ring-green-500  ">
+                        <label for="checkbox-item-4" class="ml-2 text-sm font-medium   text-black ">ضایعات الکترونیکی</label>
                     </div>
                 </li>
             </ul>
         </div>
 
-
-    <input type="text" class="w-full p-4 text-gray-900 border border-gray-300 outline-green-500 rounded-2xl " placeholder="آدرس خود را وارد کنید">
+    <input type="text" class="w-full p-4 text-gray-900 border border-gray-300 focus:border-green-500 rounded-2xl " placeholder="آدرس خود را وارد کنید">
     <label class="pick-date-title"    for=".pick-date"></label>
     <div class="pick-date bg-[#F6F7FB] p-8 rounded-2xl shadow-2xl " >
 <!--        <div class="flex items-center justify-center gap-4 flex-wrap" >-->
@@ -62,22 +73,44 @@
 <!--                شنبه 20 آبان-->
 <!--            </button>-->
 <!--        </div>-->
-        <div class="mt-4 flex items-center justify-center gap-4 flex-wrap">
-            <button  class="border border-black bg-white p-4  font-bold text-center focus:bg-green-500 focus:text-white time cursor-pointer rounded-2xl text-[16px]">
-                <p >17:00 - 19:00</p>
-                <p >شنبه</p>
+        <div class="mt-4 pt-32 flex flex-col items-center justify-center gap-4 overflow-x-hidden overflow-y-auto h-[250px]">
+            <button  class="border border-green-300 text-green-900 bg-white px-12 py-2 w-full font-bold text-center focus:bg-green-500 focus:text-white time cursor-pointer rounded-3xl flex justify-between items-center text-[14px]">
+                <span >10:00 - 12:00</span>
+                <span >شنبه 13 شهریور</span>
             </button>
-            <button   class="border border-black bg-white p-4  font-bold text-center focus:bg-green-500 focus:text-white time cursor-pointer rounded-2xl text-[16px]">
-                <p >15:00 - 17:00</p>
-                <p >شنبه</p>
+            <button   class="border border-green-300 text-green-900 bg-white px-12 py-2 w-full  font-bold text-center focus:bg-green-500 focus:text-white time cursor-pointer rounded-3xl flex justify-between items-center text-[14px]">
+                <span >15:00 - 17:00</span>
+                <span >شنبه 13 شهریور </span>
             </button>
-            <button  class="border border-black bg-white p-4  font-bold text-center focus:bg-green-500 focus:text-white time cursor-pointer rounded-2xl text-[16px]">
-                <p >15:00 - 17:00</p>
-                <p >شنبه</p>
+            <button  class="border border-green-300 text-green-900 bg-white px-12 py-2 w-full  font-bold text-center focus:bg-green-500 focus:text-white time cursor-pointer rounded-3xl flex justify-between items-center text-[14px]">
+                <span >13:00 - 15:00</span>
+                <span >دوشنبه 15 شهریور</span>
+            </button>
+            <button  class="border border-green-300 text-green-900 bg-white px-12 py-2 w-full  font-bold text-center focus:bg-green-500 focus:text-white time cursor-pointer rounded-3xl flex justify-between items-center text-[14px]">
+                <span >15:00 - 17:00</span>
+                <span >چهارشنبه 17 شهریور</span>
+            </button><button  class="border border-green-300 text-green-900 bg-white px-12 py-2 w-full  font-bold text-center focus:bg-green-500 focus:text-white time cursor-pointer rounded-3xl flex justify-between items-center text-[14px]">
+                <span >15:00 - 17:00</span>
+                <span >چهارشنبه 17 شهریور</span>
+            </button><button  class="border border-green-300 text-green-900 bg-white px-12 py-2 w-full  font-bold text-center focus:bg-green-500 focus:text-white time cursor-pointer rounded-3xl flex justify-between items-center text-[14px]">
+                <span >15:00 - 17:00</span>
+                <span >چهارشنبه 17 شهریور</span>
+            </button><button  class="border border-green-300 text-green-900 bg-white px-12 py-2 w-full  font-bold text-center focus:bg-green-500 focus:text-white time cursor-pointer rounded-3xl flex justify-between items-center text-[14px]">
+                <span >15:00 - 17:00</span>
+                <span >چهارشنبه 17 شهریور</span>
             </button>
         </div>
     </div>
-    <button class="text-center py-4 w-full bg-gray-400 button text-white rounded-2xl hover:bg-green-600">ثبت در خواست </button>
+    <div class="alert-product bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md hidden" role="alert">
+        <div class="flex">
+            <div class="py-1"><svg class="fill-current h-6 w-6 text-teal-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z"/></svg></div>
+            <div>
+                <p class="font-bold">سفارش شما با موفقیت ثبت شد.</p>
+                <p class="text-sm">تا لحظاتی دیگر به صفحه اصلی برمیگردید...</p>
+            </div>
+        </div>
+    </div>
+    <button onclick="handleSubmit()" class="text-center py-4 w-full bg-green-600 button text-white rounded-2xl hover:bg-green-600">ثبت در خواست </button>
 </div>
 <div class="fixed z-50 w-[90%] mt-4 h-16 max-w-lg -translate-x-1/2 bg-white border border-gray-300 rounded-full bottom-4 left-1/2 dark:bg-gray-700 dark:border-gray-600">
     <div class="grid h-full max-w-lg grid-cols-5 mx-auto">
