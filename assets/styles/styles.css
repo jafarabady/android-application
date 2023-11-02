@@ -36,7 +36,9 @@ a{
 .dark .menu-setting{
     color: white !important;
 }
-
+.dark .input{
+    background-color: rgb(55 65 81)
+}
 .dark-toggle{
     border:1px solid rgba(7, 253, 0, 0.51);
 }
