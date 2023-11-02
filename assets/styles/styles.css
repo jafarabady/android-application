@@ -55,6 +55,12 @@ a{
 .dark .form-prof , label{
     color: #929292 !important;
 }
+.dark .input-login{
+    background-color: #404040 !important;
+    border: 2px solid rgba(7, 253, 0, 0.51);
+    color: white !important;
+
+}
 
 /*.dark .mmd{*/
 /*    background-color: #404040 !important;*/
