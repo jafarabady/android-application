@@ -13,12 +13,23 @@ formRegister.addEventListener('submit', (event) => {
         .then(data => {
             // پاسخ موفقیت‌آمیز
             console.log(data);
-            // window.location.href = 'index.html'
+            Swal.fire({
+                title: 'اکانت ساخته شد!',
+                text: 'با خیال راحت وارد اپ شو',
+                icon: 'success',
+                confirmButtonText: 'حله'
+            })
+
         })
         .catch(error => {
             // پاسخ خطا
             console.error(error);
-            // window.location.href = 'login.html'
+            Swal.fire({
+                title: 'اکانت ساخته نشد!',
+                text: 'دوباره امتحان کن',
+                icon: 'error',
+                confirmButtonText: 'حله!'
+            })
 
         });
 });
