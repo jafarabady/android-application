@@ -15,3 +15,40 @@ body{
     direction: rtl;
     height:100vh ;
 }
+.dark{
+    background-color: #2E2E2E !important;
+}
+.dark .menu-nav{
+    background-color: #cad3d5 !important;
+}
+.dark .menu-nav .svg{
+    color: white !important;
+}
+.dark .menu-setting{
+    color: white !important;
+}
+
+.dark-toggle{
+    border:1px solid rgba(7, 253, 0, 0.51);
+}
+.dark .div-ux span{
+    color: white !important;
+}
+.div-ux{
+    border: 2px solid rgba(7, 253, 0, 0.51);
+}
+.dark .form-prof input , select {
+    background-color: #404040 !important;
+    border: 2px solid rgba(7, 253, 0, 0.51);
+    color: white !important;
+}
+
+.dark .form-prof , label{
+    color: #929292 !important;
+}
+
+/*.dark .mmd{*/
+/*    background-color: #404040 !important;*/
+/*    border: 2px solid rgba(7, 253, 0, 0.51);*/
+/*    color: white !important;*/
+/*}*/
