@@ -4,6 +4,8 @@
     <title>Webview Example</title>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/styles/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script type="text/javascript" src="../node_modules/androidjs/lib/androidjs.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -13,65 +15,23 @@
     />
     <link rel="stylesheet" href="../assets/styles/index.css">
 </head>
-
-<style>
-    .app{
-        font-size:30px;
-    }
-</style>
-
-<body>
-<div class="header-index flex flex-col">
-    <div class="border-b-2 flex justify-between items-center p-1">
-        <div class="flex flex-row justify-center items-center gap-2.5">
-            <img class="w-10" src="../assets/image/home/logo.svg" alt="">
-            <span class="text-green-600 mx-auto font-bold">پسماند من</span>
-        </div>
-        <div class="flex justify-center">
-            <a href="./aboutus.html">
-                <div class="rounded-full mt-4 items-center h-[35px] w-[35px] flex justify-center border-2 font-bold">
-                    ?
-                </div>
-            </a>
-
-            <div class="">
-                <a href="./login.html"><button type="button" class="mt-3 focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">ورود</button></a>
-            </div>
-        </div>
-
-        <!--		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />-->
+<body class="h-[900px]">
+<div class="flex flex-col justify-center header-about">
+    <div class="border-b-2 flex justify-center p-5">
+        <span  id="siteContent" class="mx-auto text-2xl">درباره ما</span>
     </div>
-    <img src="../assets/image/home/recycle.svg" alt="">
-</div>
-<div class="flex flex-col">
-    <div class="rounded-xl  px-6 mt-10 mx-auto py-4 ">
-        <a href="./page3.html">
-            <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
-  <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-درخواست جمع آوری
-  </span>
-            </button>
-        </a>
-    </div>
-
-    <div class="flex flex-row justify-center mt-4 gap-3">
-        <div>
-            <button type="button" class="text-green-950 bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-sm shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">تعرفه صنعتی</button>
-        </div>
-        <div>
-            <button type="button" class="text-green-950 bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-sm shadow-green-500/50 dark:shadow-lg dark:shadow-green-200/20 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">تعرفه پسماند</button>
-
-        </div>
-    </div>
+    <img src="../assets/image/aboutus/aboutus.svg" alt="">
 </div>
 <div class="menu-nav fixed z-50 w-[90%] h-16 max-w-lg -translate-x-1/2 bg-white border border-gray-300 rounded-full bottom-4 left-1/2 dark:bg-gray-700 dark:border-gray-600">
     <div class="grid h-full max-w-lg grid-cols-5 mx-auto">
         <button data-tooltip-target="tooltip-home" type="button"
                 class="inline-flex flex-col items-center justify-center px-5 rounded-r-full hover:bg-gray-50 dark:hover:bg-gray-800 group">
-            <svg class="w-5 h-5 mb-1 text-green-600 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500"
-                 aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                <path d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"/>
-            </svg>
+            <a href="./index.html">
+                <svg class="w-5 h-5 mb-1 text-green-600 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500"
+                     aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"/>
+                </svg>
+            </a>
             <span class="sr-only">Home</span>
         </button>
         <div id="tooltip-home" role="tooltip"
@@ -150,7 +110,30 @@
         </div>
     </div>
 </div>
-
+<div class="collapse collapse-plus bg-base-200 mt-4">
+    <input type="radio" name="my-accordion-3" checked="checked" />
+    <div class="collapse-title font-normal">
+        برنامه پسماند من چیه اصلا؟    </div>
+    <div class="collapse-content">
+        <p class="text-sm">برنامه ای ساختیم تا بتونیم پسماندو درب منزل از شما تحویل بگیریم ولی فقط باید قول بدی درست تفکیک بزنیاااا :)</p>
+    </div>
+</div>
+<div class="collapse collapse-plus bg-base-200 mt-4">
+    <input type="radio" name="my-accordion-3" checked="checked" />
+    <div class="collapse-title font-normal">
+        برای کدوم شهرا دردسترسه برنامتون؟؟؟؟  </div>
+    <div class="collapse-content">
+        <p class="text-sm"> فعلا برای قم ولی قطعا به زودی قراره کل ایران همراهیمون کنه.</p>
+    </div>
+</div>
+<div class="collapse collapse-plus bg-base-200 mt-4">
+    <input type="radio" name="my-accordion-3" checked="checked" />
+    <div class="collapse-title font-normal">
+        آیا میتونم از برنامتون کسب درامد کنم؟</div>
+    <div class="collapse-content">
+        <p class="text-sm"> ملومه که آره فقط لازمه تفکیک بزنی آشغالای خونتون یا محل کارتو وبرای درامد بیشتر مارو معرفی کن به دوستات و ...</p>
+    </div>
+</div>
 <script type="text/javascript" src="../assets/script.js"></script>
 <script src="../assets/jquery-3.3.1.slim.min.js"></script>
 <script src="../assets/js/index.js"></script>
@@ -159,5 +142,4 @@
 <!--<script src="../assets/bootstrap.min.js"></script>-->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 </body>
-
 </html>
