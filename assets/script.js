@@ -1,4 +1,10 @@
 // It's best to inline this in `head` to avoid FOUC (flash of unstyled content) when changing pages or themes
+import {
+	Collapse,
+	initTE,
+} from "tw-elements";
+
+initTE({ Collapse });
 if (
 	localStorage.getItem('color-theme') === 'dark' ||
 	(!('color-theme' in localStorage) &&
