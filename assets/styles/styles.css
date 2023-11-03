@@ -27,7 +27,18 @@ a{
 .dark{
     background-color: #2E2E2E !important;
 }
-.dark .menu-nav{
+.dark html{
+  background: #2E2E2E !important
+}
+
+.dark .walletSection{
+    background-color: #2E2E2E !important;
+    border: 2px solid #fafafa;
+}
+.dark .Validity{
+    color: rgb(21 128 61);
+}
+.dark .menu-nav ,.dark .walletItem{
     background-color: #cad3d5 !important;
 }
 /*.dark .menu-nav .svg{*/
@@ -57,7 +68,12 @@ a{
 .dark .form-prof , label{
     color: #929292 !important;
 }
-
+.date-section::-webkit-scrollbar{
+    display: none !important;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
 /*.dark .mmd{*/
 /*    background-color: #404040 !important;*/
 /*    border: 2px solid rgba(7, 253, 0, 0.51);*/
